@@ -1,0 +1,32 @@
+h1 {
+    color: red;
+    font-size: 65px;
+}
+
+/* h2 {
+  font-weight: bold;
+  font-style: italic;
+  color: green;
+  text-align:center;
+}
+ */
+
+
+h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* id */
+
+#h2-1{
+    color: red;
+    text-align: center;
+}
+
+/*class */
+.h2-2{
+    color:green;
+    text-align: right;
+}
+
