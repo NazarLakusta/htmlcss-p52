@@ -1,5 +1,14 @@
+body{
+    /* background-color: bisque; */
+    background-image: url("");
+    background-image: url("https://coolbackgrounds.imgix.net/2SvDjcgyav5C1DOb79JKXl/d3b06db5bb6bdb4ab237f666b5b4980e/compute-ea4c57a4.png?w=3840&q=60&auto=format,compress");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 h1 {
-    color: red;
+    color: #21883a;
     font-size: 65px;
 }
 
@@ -30,3 +39,57 @@ h2{
     text-align: right;
 }
 
+.important{
+    color:red;
+    font-weight: bold;
+}
+
+h3{
+    background-color: red;
+}
+
+.p-ex{
+    /* внутрішній відступ */
+    padding-top: 20px;
+    padding-left: 50px;
+    background-color: #21883a;
+
+    /* зовнішній відступ */
+    margin-left: 50%;
+}
+
+
+.p-ex-2{
+    /* внутрішній відступ */
+    padding-top: 20px;
+    padding-left: 50px;
+    background-color: #21883a;
+
+    /* зовнішній відступ */
+    margin-right: 50%;
+}
+
+
+.cat-img{
+    background-image: url("https://img.freepik.com/premium-photo/green-grass-turf-blue-sky-background_493806-4413.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+
+
+.text{
+background-color: aqua;
+    background-image: url("https://img.freepik.com/premium-photo/green-grass-turf-blue-sky-background_493806-4413.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+/* внутрішній padding */
+/* по всім краям - 20 padding: 20px; */
+/* верх/низ   ліво/право padding: 30px 10px  */
+/* верх право низ ліво padding: 20px 5px 15px 50px; */
+
+padding-top:50px;
+padding-left: 10px;
+
+margin: 30px;
+}
