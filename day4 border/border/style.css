@@ -1,0 +1,50 @@
+body{
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+div{
+    width: 600px;
+    padding: 5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.bordered{
+    border-width: 5px;
+    border-color: rgb(43, 58, 226);
+}
+
+
+.solid{
+    border-style: solid;
+}
+
+.dashed{
+    border-style: dashed;
+}
+
+.dotted{
+    border-style: dotted;
+}
+
+
+.double{
+    border-style: double;
+}
+
+
+.inset{
+    border-style: inset
+}
+
+
+.side4{
+    border-style: solid dotted double dashed;
+}
+
+.side1{
+ border:  5px double green;
+ border-right: none;
+}
