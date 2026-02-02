@@ -57,3 +57,10 @@ nav ul a:hover{
     color: #989898;
     border-bottom-color: #989898;
 }
+
+
+header{
+    height: 500px;
+    background-image: url("https://i.ibb.co/MyYJ31qd/unnamed.jpg");
+    background-size: cover;
+}
