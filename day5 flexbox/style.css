@@ -61,6 +61,148 @@ nav ul a:hover{
 
 header{
     height: 500px;
-    background-image: url("https://i.ibb.co/MyYJ31qd/unnamed.jpg");
+    background: url("https://i.ibb.co/MyYJ31qd/unnamed.jpg") no-repeat center #0f1384;
     background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: 0 60px;
+}
+
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-border{
+    border: 4px solid #dbdbdb;
+    transition: .5s;
+}
+
+.tab:hover .img-border, .testimotial:hover .img-border, .img-border:hover{
+    border-color: #fff;
+    box-shadow: 0 0 12px rgba(0,0,0,.38);
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.column-2 {
+    flex: 0 0 50%;
+}
+
+.column-3 {
+    flex: 0 0 30%;
+}
+
+.column-4 {
+    flex: 0 0 20%;
+}
+
+.portfolio-item{
+    margin: .5rem 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+
+    border: 4px solid transparent;
+    transition: 400ms ease-out;
+   
+}
+
+.portfolio-item img{
+    width: 400px;
+    display: block;
+    border: 4px solid #dbdbdb;
+    transition: 400ms ease-out;
+}
+
+.portfolio-item:hover{
+    border-color: #fff;
+    box-shadow: 0 0 24px rgba(0,0,0,.38);
+}
+
+.portfolio-item:hover img{
+    transform: scale(1.15);
+}
+
+.heading{
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: 3.5rem 0;
+    color: #1a1a1a
+}
+
+
+.team-card{
+    margin-left: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-wrapper{
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #eee;
+}
+
+.team-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.name{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+
+
+.testimonial{
+    display: inline-flex;
+    transition: .5s;
+    height: 100%;
+    background-color: #fff;
+}
+
+.testimonial:hover{
+    box-shadow: 0 0 24px rgba(0,0,0, 0.38);
+}
+
+.testimonial-author{
+    display: block;
+    margin: 20px;
+    align-self: flex-start;
+}
+
+.testimonial-body{
+    margin: 20px;
+}
+
+.testimonial-body p{
+    margin-top: 0;
+}
+
+
+.testimonial-body footer{
+    text-align: right;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 15px;
+    border-top: 2px solid #dbdbdb;
 }
