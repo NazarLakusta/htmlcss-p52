@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .row{
+            display: flex;
+            width: 1000px;
+            margin: auto;
+        }
+
+        .column{
+            background-color: #f90;
+            flex-basis: 200px;
+            flex-grow: 0;
+        }
+
+        .column:nth-child(2){
+           flex-basis: 10%;
+            background-color: #ff0;
+        }
+
+        .column:nth-child(3){
+            flex-basis: 10%;
+            background-color: #9f9;
+        }
+
+        .column:nth-child(4){
+            background-color: #0aa;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class ="row">
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias hic id quisquam voluptas debitis dolorum enim velit ab, distinctio et. Dicta amet unde beatae repudiandae a optio facilis veritatis eos.</p>
+        </div>
+
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias hic id quisquam voluptas debitis dolorum enim velit ab, distinctio et. Dicta amet unde beatae repudiandae a optio facilis veritatis eos.</p>
+        </div>
+
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias hic id quisquam voluptas debitis dolorum enim velit ab, distinctio et. Dicta amet unde beatae repudiandae a optio facilis veritatis eos.</p>
+        </div>
+
+        <div class="column">
+            <h2>Column 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias hic id quisquam voluptas debitis dolorum enim velit ab, distinctio et. Dicta amet unde beatae repudiandae a optio facilis veritatis eos.</p>
+        </div>
+    </div>
+</body>
+</html>
