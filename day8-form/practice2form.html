@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Contact Form</title>
+<style>
+        /* Налаштування для всієї сторінки */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            /* Картинка на фон (море/пляж) */
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop');
+            background-size: cover; /* Розтягнути картинку на весь екран */
+            background-position: center;
+            /* Щоб вирівняти форму по центру екрана */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Висота на весь екран */
+        }
+ 
+        /* Головна коробка форми */
+        .form-container {
+            width: 700px; /* Ширина форми */
+            background-color: rgba(0, 50, 60, 0.7); /* Темно-зелений прозорий фон */
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Тінь навколо */
+            color: white; /* Білий текст */
+        }
+ 
+        h1 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+ 
+        p {
+            font-size: 14px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+ 
+        /* Рядок форми: зліва текст, справа поле */
+        .form-row {
+            display: flex; /* Робимо їх в один рядок */
+            margin-bottom: 15px; /* Відступ знизу */
+            align-items: flex-start; /* Вирівнювання по верху */
+        }
+ 
+        /* Ліва колонка (Написи) */
+        .label-col {
+            width: 30%; /* Займає 30% ширини */
+            padding-top: 10px; /* Щоб текст був на рівні з полем */
+        }
+ 
+        /* Права колонка (Поля вводу) */
+        .input-col {
+            width: 70%; /* Займає 70% ширини */
+            display: flex; /* Щоб всередині можна було ставити кілька полів в ряд */
+            gap: 10px; /* Відступ між полями в одному рядку */
+        }
+ 
+        /* Стиль для всіх полів вводу */
+        input, select, textarea {
+            width: 100%; /* Розтягнути на всю доступну ширину */
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            background-color: white;
+            color: #555;
+        }
+ 
+        /* Для великого текстового поля */
+        textarea {
+            height: 100px;
+            resize: vertical; /* Дозволити розтягувати вниз */
+        }
+ 
+        /* Лінія розділювач перед кнопкою */
+        .divider {
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.3);
+            margin: 30px 0;
+        }
+ 
+        /* Кнопка відправки */
+        .btn-submit {
+            display: block;
+            width: 60%;
+            margin: 0 auto; /* По центру */
+            padding: 15px;
+            background-color: transparent; /* Прозорий фон */
+            border: 2px solid white; /* Біла рамка */
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase; /* Великі літери */
+        }
+ 
+        .btn-submit:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Легка підсвітка при наведенні */
+        }
+ 
+    </style>
+</head>
+<body>
+ 
+    <div class="form-container">
+<h1>Contact form</h1>
+<p>Please fill in your information and we'll be sending your order.</p>
+ 
+        <form>
+<div class="form-row">
+<div class="label-col">Your name</div>
+<div class="input-col">
+<input type="text" placeholder="first name">
+<input type="text" placeholder="last name">
+</div>
+</div>
+ 
+            <div class="form-row">
+<div class="label-col">Your email</div>
+<div class="input-col">
+<input type="email" placeholder="your_mail@mail.com">
+</div>
+</div>
+ 
+            <div class="form-row">
+<div class="label-col">Phone *</div>
+<div class="input-col">
+<input type="text" placeholder="000" style="width: 20%;">
+<input type="text" placeholder="000" style="width: 30%;">
+<input type="text" placeholder="0000" style="width: 50%;">
+</div>
+</div>
+ 
+            <div class="form-row">
+<div class="label-col">Message subject *</div>
+<div class="input-col">
+<select>
+<option>Other</option>
+<option>Support</option>
+<option>Sales</option>
+</select>
+</div>
+</div>
+ 
+            <div class="form-row">
+<div class="label-col">Message *</div>
+<div class="input-col">
+<textarea></textarea>
+</div>
+</div>
+ 
+            <div class="divider"></div>
+ 
+            <button type="button" class="btn-submit">Submit Form</button>
+</form>
+</div>
+ 
+</body>
+</html>
