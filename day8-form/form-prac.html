@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #e05238;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card{
+            background-color: #e6e6e6;
+            width: 350px;
+            padding: 50px 30px 30px 30px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .avatar{
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            border: 5px solid #3c4a55;
+            border-radius: 50%;
+            position: absolute;
+            top: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #cbd0d6;
+        }
+
+        h2{
+            margin: 10px 0 20px 0;
+            color: #000;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 3px;
+            box-sizing: border-box;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            color: #555;            
+        }
+
+        .btn-login{
+            width: 100%;
+            padding: 12px;
+            background-color: #42eb69;
+            color: white;
+            border: none;
+            border-bottom: 4px solid #1e7e34;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .btn-login:hover{
+            background-color: #218838;
+        }
+
+        .forgot{
+            display: block;
+            margin-top: 15px;
+            color: #d9534f;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .or-text{
+            color: white;
+            margin: 25px 0 15px 0;
+            font-size: 16px;
+        }
+
+        .social-row{
+            display: flex;
+            gap: 15px;
+            width: 350px;
+        }
+
+        .btn-social{
+            flex: 1;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .fb{
+            background-color: #3b5998;
+            border-bottom: 4px solid #2d4373;
+        }
+        .fb:hover{
+             background-color: #365088
+        }
+
+        .tw{
+            background-color: #00acee;
+            border-bottom: 4px solid #0084b4;
+        }
+        .tw:hover{
+            background-color: #018dc0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="avatar">&#128100</div>
+
+        <h2>Member Login</h2>
+
+        <form action="">
+
+            <input type="text" placeholder="Username">
+
+            <input type="password" placeholder="Password">
+
+            <button type="button" class="btn-login">Login</button>
+
+            <a href="" class="forgot">Forgot password</a>
+        </form>
+    </div>
+
+    <div class="or-text">... or login with: </div>
+
+    <div class="social-row">
+            <button class="btn-social fb">f Facebook</button>
+            <button class="btn-social tw">t Twitter</button>
+    </div>
+</body>
+</html>
